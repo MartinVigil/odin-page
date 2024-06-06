@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Ralewey";
+    src: url("assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Telegraf UltraLight";
+    src: url("assets/fonts/PPTelegraf-UltraLight.otf");
+}
+
+.container{
+    text-align: center;
+    font-family: "Ralewey";
+}
+
+.container > header{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ABABAB;
+    box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.43) inset;
+}
+
+.container > header > nav{
+    display: grid;
+    width: 30rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+}
+
+.container > header > nav > button{
+    width: 6rem;
+    height: 3rem;
+    border-style: none;
+    background-color: black;
+    color: white;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    align-self: center;
+    justify-self: center;
+    font-size: 110%;
+    font-family: "Telegraf UltraLight";
+}
+
+.home-section#a > h1{
+    margin-top: 0%;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    font-weight: lighter;
+    font-size: xx-large;
+    grid-column: 1/3;
+}
+
+.home-section#a{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(51,51,51);
+    background: radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 5%;
+    color: white;
+}
+
+.home-section#a > .section-div#a{
+    text-align: left;
+}
+
+.home-section#a > .section-div#b{
+    text-align: center;
+}
+
+.home-section#a > .section-div#a > h2{
+    color: #39C0E6;
+}
+
+.home-section#a > .section-div#b > p{
+    border: solid #BAFF6C 2px;
+    padding: 5%;
+    border-radius: 1rem;
+}
+
+.home-section#b {
+    background: rgb(163,163,163);
+    background: radial-gradient(circle, rgba(163,163,163,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.72) inset;
+    display: grid;
+    grid-template: 1fr 3fr / 20rem 20rem 20rem;
+    color: black;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    gap: 3%;
+}
+
+.home-section#b > .section-div > img{
+    width: 12rem;
+    height: 12rem;
+}
+
+.home-section#b > h1{
+    grid-column: 1/4;
+    font-size: x-large;
+    color: #106794;
+}
+
+.home-section#b > .section-div > h4{
+    font-weight: bold;
+    color: #683999;
+}
+
+footer > p{
+    margin: 0;
+    padding: 1%;
+}
+
+footer{
+    background-color: #ABABAB;
+}
+
+.services-section{
+    background-image: url(/assets/images/wallpapersden.com_warframe-gaming-background-black_2880x1944.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.services-section > h1{
+    margin-top: 0%;
+    padding-top: 4%;
+    font-size: 3rem;
+}
+
+.services-section > h2{
+    font-size: 1.5rem;
+    color: #39C0E6;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px, 1fr));
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.service{
+    height: 350px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    margin: 5%;
+    color: black;
+}
+
+.service > img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+    margin-top: 10%;
+}
+
+.contact-section{
+    background-image: url(/assets/images/wallpapersden.com_warframe-gaming-background-black_2880x1944.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2%;
+}
+
+.contact-section > h1{
+    margin-top: 0%;
+    padding-top: 5%;
+    font-size: 5rem;
+    color: #39C0E6;
+}
+
+.contact-section > div {
+    backdrop-filter: blur(10px);
+    border: solid white 1px;
+    margin: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1rem;
+}
+
+.contact-section > div > h3{
+    color: #BAFF6C;
+}
