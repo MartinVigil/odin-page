@@ -1,5 +1,6 @@
 import {renderHomePage} from './home.js';
 import { renderServicesPage } from './services.js';
+import { renderContactPage } from './contact.js';
 
 const homeBtn = document.querySelector("#home");
 const servicesBtn = document.querySelector("#services");
@@ -14,7 +15,7 @@ servicesBtn.addEventListener("click", () => {
 })
 
 contactBtn.addEventListener("click", () => {
-
+    renderContactPage();
 })
 
 renderHomePage();
